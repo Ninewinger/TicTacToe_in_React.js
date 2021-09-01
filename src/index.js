@@ -1,17 +1,30 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from "react-dom";
+import Login from './Login';
+import Board from "./Board"
+import Game from "./Game"
+import "./index.css"
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+let x = true;
+
+
+const Home = () => {
+    if (x === true) {
+        return (
+            <>
+                <h1>Tic Tac Toe in React.js</h1>
+                <Game />
+            </>
+        )
+    } else {
+        return (
+            <>
+                <h1>Tic Tac Toe in React.js</h1>
+                <Login />
+            </>
+        )
+    }
+}
+
+ReactDOM.render(<Home />, document.getElementById("root"))
