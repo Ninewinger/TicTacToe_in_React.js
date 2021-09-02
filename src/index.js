@@ -1,30 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from "react-dom";
 import Login from './Login';
-import Board from "./Board"
 import Game from "./Game"
 import "./index.css"
 
-
-let x = true;
-
-
-const Home = () => {
-    if (x === true) {
+class Home extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = { isEmptyState: true }
+      }
+    
+      changeState = () => {
+        this.setState({
+          ...this.state,
+          isEmptyState: false,
+          isAddTripState: true
+        })
+      }
+      render() {
         return (
-            <>
-                <h1>Tic Tac Toe in React.js</h1>
-                <Game />
-            </>
+          <div>
+              <h1>Tic Tac Toe in React.js</h1>
+              <h2></h2>
+            {this.state.isEmptyState && <Login change={this.changeState} />}
+      
+            {this.state.isAddTripState && <Game />}
+          </div>
         )
-    } else {
-        return (
-            <>
-                <h1>Tic Tac Toe in React.js</h1>
-                <Login />
-            </>
-        )
+      }
     }
-}
+
 
 ReactDOM.render(<Home />, document.getElementById("root"))

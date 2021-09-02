@@ -18,11 +18,11 @@
       background-color: #538fbe;
       margin: 10px;
       border: 1px solid #2d6898;
-      background-image: linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
-      background-image: -o-linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
-      background-image: -moz-linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
-      background-image: -webkit-linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
-      background-image: -ms-linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
+      background-image: linear-gradient(bottom, rgb(133, 138, 141) 0%, rgb(97,155,203) 100%);
+      background-image: -o-linear-gradient(bottom, rgb(133, 138, 141) 0%, rgb(97,155,203) 100%);
+      background-image: -moz-linear-gradient(bottom, rgb(133, 138, 141) 0%, rgb(97,155,203) 100%);
+      background-image: -webkit-linear-gradient(bottom, rgb(133, 138, 141) 0%, rgb(97,155,203) 100%);
+      background-image: -ms-linear-gradient(bottom, rgb(133, 138, 141) 0%, rgb(97,155,203) 100%);
       background-image: -webkit-gradient(
           linear,
           left bottom,
@@ -81,5 +81,54 @@
    }
    .status {
     margin-bottom: 10px;
+   }
+   h1,h2 {
+    width:500px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+   }
+   body {
+    background-color: rgb(92, 91, 91);
+    font-family: Arial;
+   }
+   .player {
+       font-size: 60px;
+       height: 80px;
+       width: 80px;
+       border: none;
+       background-color: rgb(41, 41, 41);
+   }
+   #bx {
+       color:rgb(145, 145, 2);
+       margin-bottom: 10px;
+   }
+   #bo {
+       color: rgb(75, 75, 196);
+       margin-bottom: 10px;
+   }
+   #bx:active{
+       border: 1px solid white;
+   }
+   #bo:active{
+    border: 1px solid white;
+}
+   h2 {
+       margin-bottom: 300px;
+   }
+   .contlog {
+       background-color: rgb(66, 66, 66);
+       margin-top: 300px;
+       width: 600px;
+       text-align: center;
+       margin: auto;
+   }
+   .asd {
+       float: left;
+       text-align: center;
+       margin-left: 80px;
+   }
+   input {
+       margin-bottom: 10px;
    }
    
