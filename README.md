@@ -1,3 +1,8 @@
+Tic Tac Toe React.js
+
+![alt text](https://github.com/Ninewinger/TicTacToe_in_React.js/blob/main/photo.jpg?raw=true)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
